@@ -9,6 +9,18 @@
 				{% for contact in site.contact %} 
 					<li><a href = "{{ contact[1] }}">{{ contact[0] }}</a></li>
 				{% endfor %}
+
+		{% assign pages_list = site.pages %}
+		{% assign group = 'navigation' %}
+		{% for node in pages_list %}
+			{% if node.title != null and group == node.group %}
+				<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+			{% endif %}
+		{% endfor %}
+		{% assign pages_list = nil %}
+		{% assign group = nil %}
+
+
 				</ul>
 			</div>
 			<div class="col-md-4 hidden-xs hidden-sm">

@@ -28,6 +28,14 @@ contact :
 # Links showed on the footer
 #
 links :
+  电影  : http://movie.cqun.com
+  电视剧 : http://dianshiju.cqun.com
+  综艺  : http://zongyi.cqun.com
+  人物  : http://renwu.cqun.com
+  汽车  : http://auto.cqun.com
+  旅游  : http://lvyou.cqun.com
+
+
 #  Yitao's Blog : http://simpleyyt.github.io/
 
 # The search engine. Only support google custom search engine.
@@ -97,7 +105,7 @@ JB :
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : false
+  BASE_PATH : http://movie.cqun.com
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
